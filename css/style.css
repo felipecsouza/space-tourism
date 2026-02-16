@@ -5,48 +5,65 @@
 }
 
 :root {
-    /* desktop font */
-    --text-preset-1: 400 144px/auto "Bellefair", serif;
-    --text-preset-2: 400 96px/auto "Bellefair", serif;
-    --text-preset-3: 400 56px/auto "Bellefair", serif;
-    --text-preset-4: 400 32px/auto "Bellefair", serif;
-    --text-preset-5: 400 28px/auto 4px "Barlow Condensed", sans-serif;
-    --text-preset-6: 400 28px/auto "Bellefair", serif;
-    --text-preset-7: 400 14px/auto 2px "Barlow Condensed", sans-serif;
-    --text-preset-8: 400 16px/auto 2px "Barlow Condensed", sans-serif;
-    --text-preset-9: 400 18px/180% "Barlow", sans-serif;
+
+    /* fonts */
+    --font-head: "Bellefair", serif;
+    --font-sub: "Barlow Condensed", sans-serif;
+    --font-text: "Barlow", sans-serif;
+
+    /* font sizes */
+    --fs-1: 144px;
+    --fs-2: 96px;
+    --fs-3: 56px;
+    --fs-4: 32px;
+    --fs-5: 28px;
+    --fs-6: 28px;
+    --fs-7: 14px;
+    --fs-8: 16px;
+    --fs-9: 18px;
 
     /* colors */
-    --blue-1: #0b0d17;
-    --blue-2: #d0d6f9;
+    --blue-900: #0b0d17;
+    --blue-300: #d0d6f9;
     --white: #fff;
 }
 
+/* utility classes text presets */
+.text-preset-1 {font: 400 var(--fs-1)/auto var(--font-head); text-transform: uppercase;}
+.text-preset-2 {font: 400 var(--fs-2)/auto var(--font-head); text-transform: uppercase;}
+.text-preset-3 {font: 400 var(--fs-3)/auto var(--font-head); text-transform: uppercase;}
+.text-preset-4 {font: 400 var(--fs-4)/auto var(--font-head); text-transform: uppercase;}
+.text-preset-5 {font: 400 var(--fs-5)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 4px;}
+.text-preset-6 {font: 400 var(--fs-6)/auto var(--font-head); text-transform: uppercase;}
+.text-preset-7 {font: 400 var(--fs-7)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 2px;}
+.text-preset-8 {font: 400 var(--fs-8)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 2px;}
+.text-preset-9 {font: 400 var(--fs-9)/180% var(--font-text); text-transform: uppercase;}
+
 body {
-    font-family: "Barlow condensed", sans-serif;
-    background-color: var(--blue-1);
+    font-family: var(--font-sub);
+    background-color: var(--blue-900);
     color: var(--white);
 }
 
 @media (max-width: 800px) {
     /* tablet font */
-    root {
-        --text-preset-2: 400 80px/auto "Bellefair", serif;
-        --text-preset-3: 400 40px/auto "Bellefair", serif;
-        --text-preset-4: 400 24px/auto "Bellefair", serif;
-        --text-preset-5: 400 20px/auto 4px "Barlow Condensed", sans-serif;
-        --text-preset-9: 400 15px/180% "Barlow", sans-serif;
+    :root {
+        --fs-2: 80px;
+        --fs-3: 40px;
+        --fs-4: 24px;
+        --fs-5: 20px;
+        --fs-9: 15px;
     }
 }
 
 @media (max-width: 600px) {
-    root {
-        --text-preset-1: 400 80px/auto "Bellefair", serif;
-        --text-preset-2: 400 56px/auto "Bellefair", serif;
-        --text-preset-3: 400 24px/auto "Bellefair", serif;
-        --text-preset-4: 400 18px/auto "Bellefair", serif;
-        --text-preset-6: 400 16px/auto "Bellefair", serif;
-        --text-preset-8: 400 14px/auto 2px "Barlow Condensed", sans-serif;
-        --text-preset-9: 400 15px/180% "Barlow", sans-serif;
+    :root {
+        --fs-1: 80px;
+        --fs-2: 56px;
+        --fs-3: 24px;
+        --fs-4: 18px;
+        --fs-6: 16px;
+        --fs-8: 14px;
+        --fs-9: 15px;
     }
 }
