@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -37,7 +39,12 @@
 .text-preset-6 {font: 400 var(--fs-6)/auto var(--font-head); text-transform: uppercase;}
 .text-preset-7 {font: 400 var(--fs-7)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 2px;}
 .text-preset-8 {font: 400 var(--fs-8)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 2px;}
-.text-preset-9 {font: 400 var(--fs-9)/180% var(--font-text); text-transform: uppercase;}
+.text-preset-8-bold {font: 700 var(--fs-8)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 2px;}
+.text-preset-9 {font: 400 var(--fs-9)/180% var(--font-text);}
+
+.text-blue-900 {color: var(--blue-900);}
+.text-blue-300 {color: var(--blue-300);}
+.text-white {color: var(--white);}
 
 body {
     font-family: var(--font-sub);
