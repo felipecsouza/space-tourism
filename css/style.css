@@ -34,17 +34,16 @@ a {
 }
 
 /* --- Utility Classes: Typography (Shape) --- */
-.text-preset-1 { font: 400 var(--fs-1)/auto var(--font-head); text-transform: uppercase; }
-.text-preset-2 { font: 400 var(--fs-2)/auto var(--font-head); text-transform: uppercase; }
-.text-preset-3 { font: 400 var(--fs-3)/auto var(--font-head); text-transform: uppercase; }
-.text-preset-4 { font: 400 var(--fs-4)/auto var(--font-head); text-transform: uppercase; }
-.text-preset-5 { font: 400 var(--fs-5)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 4px; }
-.text-preset-6 { font: 400 var(--fs-6)/auto var(--font-head); text-transform: uppercase; }
-.text-preset-7 { font: 400 var(--fs-7)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 2px; }
-.text-preset-8 { font: 400 var(--fs-8)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 2px; }
-/* .text-preset-8-bold { font: 700 var(--fs-8)/auto var(--font-sub); text-transform: uppercase; letter-spacing: 2px; } */
-.text-preset-8-bold { font-weight: 700; font-family: var(--font-sub); font-size: var(--fs-8); text-transform: uppercase; letter-spacing: 2px; }
-.text-preset-9 { font: 400 var(--fs-9)/180% var(--font-text); }
+.text-preset-1 { font-weight: 400; font-size: var(--fs-1); font-family: var(--font-head); text-transform: uppercase; }
+.text-preset-2 { font-weight: 400; font-size: var(--fs-2); font-family: var(--font-head); text-transform: uppercase; }
+.text-preset-3 { font-weight: 400; font-size: var(--fs-3); font-family: var(--font-head); text-transform: uppercase; }
+.text-preset-4 { font-weight: 400; font-size: var(--fs-4); font-family: var(--font-head); text-transform: uppercase; }
+.text-preset-5 { font-weight: 400; font-size: var(--fs-5); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 4px; }
+.text-preset-6 { font-weight: 400; font-size: var(--fs-6); font-family: var(--font-head); text-transform: uppercase; }
+.text-preset-7 { font-weight: 400; font-size: var(--fs-7); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 2px; }
+.text-preset-8 { font-weight: 400; font-size: var(--fs-8); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 2px; }
+.text-preset-8-bold { font-weight: 700; font-size: var(--fs-8); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 2px; }
+.text-preset-9 { font-weight: 400; font-size: var(--fs-9); font-family: var(--font-text); text-transform: none; line-height: 1.8; }
 
 /* --- Utility Classes: Colors (Paint) --- */
 .text-blue-900 { color: var(--blue-900); }
@@ -60,6 +59,10 @@ body {
     background-color: var(--blue-900);
     color: var(--white);
     min-height: 100vh;
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -67,6 +70,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 40px;
+    padding-bottom: 25px;
 }
 
 .logo {
@@ -74,10 +78,10 @@ header {
     padding-left: 64px;
     height: 48px;
     flex: 1;
-    margin-right: -32px;
     gap: 64px;
     align-items: center;
     z-index: 1000;
+    margin-right: -16px;
 }
 
 .menu-line {
@@ -87,8 +91,13 @@ header {
     opacity: 25%;
 }
 
-nav {
+.menu-nav-container {
     flex: 1;
+    margin-left: -16px;
+    padding: 0 64px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(80px);
+    max-width: calc(50% + 16px);
 }
 
 .menu-nav {
@@ -96,15 +105,38 @@ nav {
     display: flex;
     gap: 48px;
     align-items: center;
-    padding: 0 64px;
-    background-color: grey;
     justify-content: flex-end;
 }
 
 .menu-nav a {
     display: block;
     padding: 40px 0;
-    background-color: tomato;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 128px 0;
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texts-home {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 /* Medias Querys */
