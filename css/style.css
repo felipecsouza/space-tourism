@@ -100,6 +100,10 @@ header {
     max-width: calc(50% + 16px);
 }
 
+.menu-nav span {
+    margin-right: 12px;
+}
+
 .menu-nav {
     flex: 1;
     display: flex;
@@ -118,7 +122,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 128px 0;
-    height: 100%;
+    flex: 1;
 }
 
 .main-container {
@@ -127,7 +131,7 @@ main {
     justify-content: flex-end;
 }
 
-.itens-container {
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -136,7 +140,8 @@ main {
 .texts-home {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    max-width: 540px;
+    gap: 24px;
 }
 
 /* Medias Querys */
