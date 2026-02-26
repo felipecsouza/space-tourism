@@ -63,6 +63,9 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -119,22 +122,18 @@ header {
 
 main {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 128px 0;
     flex: 1;
+    align-items: flex-end;
 }
 
 .main-container {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
+    max-width: 1110px;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .texts-home {
@@ -142,6 +141,17 @@ main {
     flex-direction: column;
     max-width: 540px;
     gap: 24px;
+}
+
+.btn-explore {
+    width: 272px;
+    aspect-ratio: 1/1;
+    background-color: var(--white);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 50%;
 }
 
 /* Medias Querys */
