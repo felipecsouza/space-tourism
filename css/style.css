@@ -185,13 +185,54 @@ main {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
     :root {
         --fs-2: 80px;
         --fs-3: 40px;
-        --fs-4: 24px;
-        --fs-5: 20px;
-        --fs-9: 15px;
+        --fs-4: 32px;
+        --fs-5: 28px;
+        --fs-9: 16px;
+    }
+
+    body {
+        background-image: url('../assets/home/background-home-tablet.jpg');
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .logo {
+        margin: 0;
+        margin-right: 40px;
+        flex: 0;
+        padding-left: 40px;
+    }
+
+    .menu-nav-container {
+        margin: 0;
+        max-width: none;
+        padding: 0 40px;
+    }
+
+    .menu-line {
+        display: none;
+    }
+
+    main {
+        padding: 128px 40px;
+        align-items: stretch;
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .texts-home {
+        text-align: center;
+        gap: 24px;
+        max-width: 512px;
     }
 }
 
