@@ -31,6 +31,8 @@ a {
     --blue-900: #0b0d17;
     --blue-300: #d0d6f9;
     --white: #fff;
+    --white-50: rgba(255, 255, 255, 0.5);
+    --white-10: rgba(255, 255, 255, 0.1);
 }
 
 /* --- Utility Classes: Typography (Shape) --- */
@@ -118,6 +120,13 @@ header {
 .menu-nav a {
     display: block;
     padding: 40px 0;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+    max-height: 96px;
+}
+
+.menu-nav a.active {
+    border-bottom: 3px solid var(--white);
 }
 
 main {
@@ -148,13 +157,34 @@ main {
     aspect-ratio: 1/1;
     background-color: var(--white);
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center ;
     border-radius: 50%;
+    transition: 0.2s;
+}
+
+/* HOVERS */
+@media (hover:hover) {
+    .menu-nav a:not(.active):hover {
+        border-bottom: 3px solid var(--white-50);
+    }
+
+    .btn-explore:hover {
+        box-shadow: 0 0 0 88px var(--white-10);
+    }
 }
 
 /* Medias Querys */
+@media (min-width: 2000px) {
+    main {
+        padding: calc((128 / 863) * 100%) 0;
+    }
+
+    .main-container {
+        max-width: 1500px;
+    }
+}
+
 @media (max-width: 800px) {
     :root {
         --fs-2: 80px;
