@@ -174,7 +174,7 @@ main {
     }
 }
 
-/* Medias Querys */
+/* Media Query 4k */
 @media (min-width: 2000px) {
     main {
         padding: calc((128 / 863) * 100%) 0;
@@ -185,6 +185,7 @@ main {
     }
 }
 
+/* Media Query Tablet */
 @media (max-width: 1300px) {
     :root {
         --fs-2: 80px;
@@ -233,9 +234,11 @@ main {
         text-align: center;
         gap: 24px;
         max-width: 512px;
+        margin-bottom: 45px;
     }
 }
 
+/* Media Query Mobile */
 @media (max-width: 600px) {
     :root {
         --fs-1: 80px;
