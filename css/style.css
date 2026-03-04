@@ -96,6 +96,14 @@ header {
     opacity: 25%;
 }
 
+.burger-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
 .menu-nav-container {
     flex: 1;
     margin-left: -16px;
@@ -239,14 +247,107 @@ main {
 }
 
 /* Media Query Mobile */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     :root {
         --fs-1: 80px;
         --fs-2: 56px;
         --fs-3: 24px;
         --fs-4: 18px;
+        --fs-5: 16px;
         --fs-6: 16px;
         --fs-8: 14px;
         --fs-9: 15px;
+    }
+
+    .text-preset-5 { letter-spacing: 15%;}
+
+    body {
+        background-image: url('../assets/home/background-home-mobile.jpg');
+    }
+
+    header {
+        padding: 24px 0;
+    }
+
+    .logo {
+        height: 40px;
+        padding-left: 24px;
+    }
+
+    .logo a img{
+        height: 40px;
+    }
+
+    .burger-menu {
+        display: flex;
+        justify-self: flex-end;
+        border: none;
+        background-color: transparent;
+        padding-right: 24px;
+    }
+
+    .menu-nav-container {
+        display: none;
+    }
+
+    .menu-nav-container.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 2000;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: rgba(11, 13, 23, 0.15);
+        backdrop-filter: blur(80px);
+        width: 68.65%;
+        padding: 0;
+        padding-left: 32px;
+        gap: 48px;
+    }
+
+    .menu-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px;
+        flex: 0;
+        width: 100%;
+    }
+
+    .close-menu {
+        display: inline-block;
+        margin-left: auto;
+        border: none;
+        background-color: transparent;
+        justify-self: flex-end;
+        padding: 32px 24px 32px 0;
+        cursor: pointer;
+    }
+
+    .menu-nav a {
+        border-right: 3px solid transparent;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu-nav a.active {
+        border-bottom: none;
+        border-right: 3px solid var(--white);
+    }
+
+    main {
+        padding: 24px;
+    }
+
+    .texts-home {
+        gap: 24px;
+        justify-self: flex-start;
+        margin: 0;
+    }
+
+    .btn-explore {
+        width: 144px;
+        margin: auto 0;
     }
 }
