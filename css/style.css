@@ -96,11 +96,11 @@ header {
     opacity: 25%;
 }
 
-.burger-menu {
+.hamburger-menu {
     display: none;
 }
 
-.close-menu {
+.btn-close-menu {
     display: none;
 }
 
@@ -278,7 +278,7 @@ main {
         height: 40px;
     }
 
-    .burger-menu {
+    .hamburger-menu {
         display: flex;
         justify-self: flex-end;
         border: none;
@@ -290,7 +290,7 @@ main {
         display: none;
     }
 
-    .menu-nav-container.open {
+    .menu-nav-container.is-open {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -314,7 +314,7 @@ main {
         width: 100%;
     }
 
-    .close-menu {
+    .btn-close-menu {
         display: inline-block;
         margin-left: auto;
         border: none;

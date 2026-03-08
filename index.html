@@ -14,14 +14,14 @@
     <header>
         <div class="logo">
             <a href="index.html"><img src="assets/shared/logo.svg" alt="Space Tourism Home"></a>
-            <span class="menu-line"></span>
+            <div class="menu-line" aria-hidden="true"></div>
         </div>
-        <button class="burger-menu">
+        <button class="hamburger-menu" aria-controls="primary-navigation" aria-expanded="false">
             <img src="assets/shared/icon-hamburger.svg" alt="Open menu">
         </button>
         <nav class="menu-nav-container">
-            <button class="close-menu"><img src="assets/shared/icon-close.svg" alt="Close menu"></button>
-            <ul class="menu-nav text-preset-8">
+            <button class="btn-close-menu" aria-label="close menu"><img src="assets/shared/icon-close.svg" alt="Close menu"></button>
+            <ul id="primary-navigation" class="menu-nav text-preset-8">
                 <li><a href="index.html" class="active"><span class="text-preset-8-bold">00</span>HOME</a></li>
                 <li><a href="destination.html"><span class="text-preset-8-bold">01</span>DESTINATION</a></li>
                 <li><a href="crew.html"><span class="text-preset-8-bold">02</span>CREW</a></li>
