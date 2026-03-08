@@ -17,15 +17,15 @@ a {
     --font-text: "Barlow", sans-serif;
 
     /* font sizes */
-    --fs-1: 144px;
-    --fs-2: 96px;
-    --fs-3: 56px;
-    --fs-4: 32px;
-    --fs-5: 28px;
-    --fs-6: 28px;
-    --fs-7: 14px;
-    --fs-8: 16px;
-    --fs-9: 18px;
+    --fs-1: 9rem;
+    --fs-2: 6rem;
+    --fs-3: 3.5rem;
+    --fs-4: 2rem;
+    --fs-5: 1.75rem;
+    --fs-6: 1.75rem;
+    --fs-7: 0.875rem;
+    --fs-8: 1rem;
+    --fs-9: 1.125rem;
 
     /* colors */
     --blue-900: #0b0d17;
@@ -40,11 +40,11 @@ a {
 .text-preset-2 { font-weight: 400; font-size: var(--fs-2); font-family: var(--font-head); text-transform: uppercase; }
 .text-preset-3 { font-weight: 400; font-size: var(--fs-3); font-family: var(--font-head); text-transform: uppercase; }
 .text-preset-4 { font-weight: 400; font-size: var(--fs-4); font-family: var(--font-head); text-transform: uppercase; }
-.text-preset-5 { font-weight: 400; font-size: var(--fs-5); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 4px; }
+.text-preset-5 { font-weight: 400; font-size: var(--fs-5); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 0.25rem; }
 .text-preset-6 { font-weight: 400; font-size: var(--fs-6); font-family: var(--font-head); text-transform: uppercase; }
-.text-preset-7 { font-weight: 400; font-size: var(--fs-7); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 2px; }
-.text-preset-8 { font-weight: 400; font-size: var(--fs-8); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 2px; }
-.text-preset-8-bold { font-weight: 700; font-size: var(--fs-8); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 2px; }
+.text-preset-7 { font-weight: 400; font-size: var(--fs-7); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 0.125rem; }
+.text-preset-8 { font-weight: 400; font-size: var(--fs-8); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 0.125rem; }
+.text-preset-8-bold { font-weight: 700; font-size: var(--fs-8); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 0.125rem; }
 .text-preset-9 { font-weight: 400; font-size: var(--fs-9); font-family: var(--font-text); text-transform: none; line-height: 1.8; }
 
 /* --- Utility Classes: Colors (Paint) --- */
@@ -74,19 +74,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5625rem;
 }
 
 .logo {
     display: flex;
-    padding-left: 64px;
-    height: 48px;
+    padding-left: 4rem;
+    height: 3rem;
     flex: 1;
-    gap: 64px;
+    gap: 4rem;
     align-items: center;
     z-index: 1000;
-    margin-right: -16px;
+    margin-right: -1rem;
 }
 
 .menu-line {
@@ -106,31 +106,31 @@ header {
 
 .menu-nav-container {
     flex: 1;
-    margin-left: -16px;
-    padding: 0 64px;
+    margin-left: -1rem;
+    padding: 0 4rem;
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(80px);
-    max-width: calc(50% + 16px);
+    max-width: calc(50% + 1rem);
 }
 
 .menu-nav span {
-    margin-right: 12px;
+    margin-right: 0.75rem;
 }
 
 .menu-nav {
     flex: 1;
     display: flex;
-    gap: 48px;
+    gap: 3rem;
     align-items: center;
     justify-content: flex-end;
 }
 
 .menu-nav a {
     display: block;
-    padding: 40px 0;
+    padding: 2.5rem 0;
     border-bottom: 3px solid transparent;
     transition: 0.2s;
-    max-height: 96px;
+    max-height: 6rem;
 }
 
 .menu-nav a.active {
@@ -140,14 +140,14 @@ header {
 main {
     display: flex;
     justify-content: center;
-    padding: 128px 0;
+    padding: 8rem 0;
     flex: 1;
     align-items: flex-end;
 }
 
 .main-container {
     display: flex;
-    max-width: 1110px;
+    max-width: 69.375rem;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -156,12 +156,12 @@ main {
 .texts-home {
     display: flex;
     flex-direction: column;
-    max-width: 540px;
-    gap: 24px;
+    max-width: 33.75rem;
+    gap: 1.5rem;
 }
 
 .btn-explore {
-    width: 272px;
+    width: 17rem;
     aspect-ratio: 1/1;
     background-color: var(--white);
     display: flex;
@@ -183,24 +183,24 @@ main {
 }
 
 /* Media Query 4k */
-@media (min-width: 2000px) {
+@media (min-width: 125em) {
     main {
         padding: calc((128 / 863) * 100%) 0;
     }
 
     .main-container {
-        max-width: 1500px;
+        max-width: 93.75rem;
     }
 }
 
 /* Media Query Tablet */
-@media (max-width: 1300px) {
+@media (max-width: 81.25em) {
     :root {
-        --fs-2: 80px;
-        --fs-3: 40px;
-        --fs-4: 32px;
-        --fs-5: 28px;
-        --fs-9: 16px;
+        --fs-2: 5rem;
+        --fs-3: 2.5rem;
+        --fs-4: 2rem;
+        --fs-5: 1.75rem;
+        --fs-9: 1rem;
     }
 
     body {
@@ -213,15 +213,15 @@ main {
 
     .logo {
         margin: 0;
-        margin-right: 40px;
+        margin-right: 2.5rem;
         flex: 0;
-        padding-left: 40px;
+        padding-left: 2.5rem;
     }
 
     .menu-nav-container {
         margin: 0;
         max-width: none;
-        padding: 0 40px;
+        padding: 0 2.5rem;
     }
 
     .menu-line {
@@ -229,7 +229,7 @@ main {
     }
 
     main {
-        padding: 128px 40px;
+        padding: 8rem 2.5rem;
         align-items: stretch;
     }
 
@@ -240,42 +240,42 @@ main {
 
     .texts-home {
         text-align: center;
-        gap: 24px;
-        max-width: 512px;
-        margin-bottom: 45px;
+        gap: 1.5rem;
+        max-width: 32rem;
+        margin-bottom: 2.8125rem;
     }
 }
 
 /* Media Query Mobile */
-@media (max-width: 750px) {
+@media (max-width: 46.875em) {
     :root {
-        --fs-1: 80px;
-        --fs-2: 56px;
-        --fs-3: 24px;
-        --fs-4: 18px;
-        --fs-5: 16px;
-        --fs-6: 16px;
-        --fs-8: 14px;
-        --fs-9: 15px;
+        --fs-1: 5rem;
+        --fs-2: 3.5rem;
+        --fs-3: 1.5rem;
+        --fs-4: 1.125rem;
+        --fs-5: 1rem;
+        --fs-6: 1rem;
+        --fs-8: 0.875rem;
+        --fs-9: 0.9375rem;
     }
 
-    .text-preset-5 { letter-spacing: 15%;}
+    .text-preset-5 { letter-spacing: 0.15em;}
 
     body {
         background-image: url('../assets/home/background-home-mobile.jpg');
     }
 
     header {
-        padding: 24px 0;
+        padding: 1.5rem 0;
     }
 
     .logo {
-        height: 40px;
-        padding-left: 24px;
+        height: 2.5rem;
+        padding-left: 1.5rem;
     }
 
     .logo a img{
-        height: 40px;
+        height: 2.5rem;
     }
 
     .hamburger-menu {
@@ -283,7 +283,7 @@ main {
         justify-self: flex-end;
         border: none;
         background-color: transparent;
-        padding-right: 24px;
+        padding-right: 1.5rem;
     }
 
     .menu-nav-container {
@@ -302,14 +302,14 @@ main {
         backdrop-filter: blur(80px);
         width: 68.65%;
         padding: 0;
-        padding-left: 32px;
-        gap: 48px;
+        padding-left: 2rem;
+        gap: 3rem;
     }
 
     .menu-nav {
         flex-direction: column;
         align-items: stretch;
-        gap: 32px;
+        gap: 2rem;
         flex: 0;
         width: 100%;
     }
@@ -320,7 +320,7 @@ main {
         border: none;
         background-color: transparent;
         justify-self: flex-end;
-        padding: 32px 24px 32px 0;
+        padding: 2rem 1.5rem 2rem 0;
         cursor: pointer;
     }
 
@@ -337,17 +337,17 @@ main {
     }
 
     main {
-        padding: 24px;
+        padding: 1.5rem;
     }
 
     .texts-home {
-        gap: 24px;
+        gap: 1.5rem;
         justify-self: flex-start;
         margin: 0;
     }
 
     .btn-explore {
-        width: 144px;
+        width: 9rem;
         margin: auto 0;
     }
 }
