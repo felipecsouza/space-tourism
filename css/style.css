@@ -1,3 +1,6 @@
+
+/* ===== GLOBAL ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -61,7 +64,6 @@ body {
     background-color: var(--blue-900);
     color: var(--white);
     min-height: 100vh;
-    background-image: url('../assets/home/background-home-desktop.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -137,63 +139,16 @@ header {
     border-bottom: 3px solid var(--white);
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    padding: 8rem 0;
-    flex: 1;
-    align-items: flex-end;
-}
+/* HOVER GLOBAL */
 
-.main-container {
-    display: flex;
-    max-width: 69.375rem;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.texts-home {
-    display: flex;
-    flex-direction: column;
-    max-width: 33.75rem;
-    gap: 1.5rem;
-}
-
-.btn-explore {
-    width: 17rem;
-    aspect-ratio: 1/1;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    border-radius: 50%;
-    transition: 0.2s;
-}
-
-/* HOVERS */
 @media (hover:hover) {
     .menu-nav a:not(.active):hover {
         border-bottom: 3px solid var(--white-50);
     }
-
-    .btn-explore:hover {
-        box-shadow: 0 0 0 88px var(--white-10);
-    }
 }
 
-/* Media Query 4k */
-@media (min-width: 125em) {
-    main {
-        padding: calc((128 / 863) * 100%) 0;
-    }
+/* MEDIA QUERY GLOBAL */
 
-    .main-container {
-        max-width: 93.75rem;
-    }
-}
-
-/* Media Query Tablet */
 @media (max-width: 81.25em) {
     :root {
         --fs-2: 5rem;
@@ -201,10 +156,6 @@ main {
         --fs-4: 2rem;
         --fs-5: 1.75rem;
         --fs-9: 1rem;
-    }
-
-    body {
-        background-image: url('../assets/home/background-home-tablet.jpg');
     }
 
     header {
@@ -227,26 +178,8 @@ main {
     .menu-line {
         display: none;
     }
-
-    main {
-        padding: 8rem 2.5rem;
-        align-items: stretch;
-    }
-
-    .main-container {
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .texts-home {
-        text-align: center;
-        gap: 1.5rem;
-        max-width: 32rem;
-        margin-bottom: 2.8125rem;
-    }
 }
 
-/* Media Query Mobile */
 @media (max-width: 46.875em) {
     :root {
         --fs-1: 5rem;
@@ -260,10 +193,6 @@ main {
     }
 
     .text-preset-5 { letter-spacing: 0.15em;}
-
-    body {
-        background-image: url('../assets/home/background-home-mobile.jpg');
-    }
 
     header {
         padding: 1.5rem 0;
@@ -335,6 +264,98 @@ main {
         border-bottom: none;
         border-right: 3px solid var(--white);
     }
+}
+
+/* ===== HOME ===== */
+
+.home {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0;
+    flex: 1;
+    align-items: flex-end;
+}
+
+.main-container {
+    display: flex;
+    max-width: 69.375rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texts-home {
+    display: flex;
+    flex-direction: column;
+    max-width: 33.75rem;
+    gap: 1.5rem;
+}
+
+.btn-explore {
+    width: 17rem;
+    aspect-ratio: 1/1;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+/* HOVERS */
+@media (hover:hover) {
+
+    .btn-explore:hover {
+        box-shadow: 0 0 0 88px var(--white-10);
+    }
+}
+
+/* Media Query 4k */
+@media (min-width: 125em) {
+    main {
+        padding: calc((128 / 863) * 100%) 0;
+    }
+
+    .main-container {
+        max-width: 93.75rem;
+    }
+}
+
+/* Media Query Tablet */
+@media (max-width: 81.25em) {
+
+    .home {
+        background-image: url('../assets/home/background-home-tablet.jpg');
+    }
+
+    main {
+        padding: 8rem 2.5rem;
+        align-items: stretch;
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .texts-home {
+        text-align: center;
+        gap: 1.5rem;
+        max-width: 32rem;
+        margin-bottom: 2.8125rem;
+    }
+}
+
+/* Media Query Mobile */
+@media (max-width: 46.875em) {
+
+    .home {
+        background-image: url('../assets/home/background-home-mobile.jpg');
+    }
 
     main {
         padding: 1.5rem;
@@ -351,3 +372,5 @@ main {
         margin: auto 0;
     }
 }
+
+/* ===== DESTINATION ===== */
