@@ -374,3 +374,41 @@ main {
 }
 
 /* ===== DESTINATION ===== */
+
+.destination {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+}
+
+.main__destination__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+    padding: 3rem 0;
+}
+
+.main__destination__container h2 {
+    --fs-8: 1.75rem;
+}
+
+.main__destination__content {
+    display: flex;
+    gap: 2rem;
+}
+
+.destination__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 27.8125rem;
+}
+
+.planet-menu ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.planet__info {
+    display: flex;
+    gap: 1.5rem;
+}
