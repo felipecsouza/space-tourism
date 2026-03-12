@@ -9,6 +9,19 @@
     list-style: none;
 }
 
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+
 a {
     color: inherit;
 }
@@ -316,7 +329,7 @@ main {
     }
 }
 
-/* Media Query 4k */
+/* Media Query 4k - HOME */
 @media (min-width: 125em) {
     main {
         padding: calc((128 / 863) * 100%) 0;
@@ -327,7 +340,7 @@ main {
     }
 }
 
-/* Media Query Tablet */
+/* Media Query Tablet - HOME */
 @media (max-width: 81.25em) {
 
     .home {
@@ -352,7 +365,7 @@ main {
     }
 }
 
-/* Media Query Mobile */
+/* Media Query Mobile - HOME */
 @media (max-width: 46.875em) {
 
     .home {
@@ -400,6 +413,10 @@ main {
     --fs-8: 1.75rem;
 }
 
+.main__destination__container h2 span {
+    margin-right: 1.5rem;
+}
+
 .main__destination__content {
     display: flex;
     flex: 1;
@@ -421,7 +438,21 @@ main {
 
 .planet-menu ul {
     display: flex;
-    gap: 2rem;
+    gap: 2rem;    
+}
+
+.planet-menu button:not(.active) {
+    color: var(--blue-300);
+}
+
+.planet-menu button {
+    border-bottom: 3px solid transparent;
+    padding-bottom: .8125rem;
+    transition: 0.2s;
+}
+
+.planet-menu button.active {
+    border-bottom: 3px solid var(--white);
 }
 
 .destination__texts {
@@ -449,4 +480,54 @@ main {
     flex-direction: column;
     gap: .75rem;
     flex: 1;
+}
+
+@media (hover:hover) {
+    .planet-menu button:hover:not(.active) {
+        border-bottom: 3px solid var(--white-50);
+    }
+}
+
+/* Media Query Tablet - DESTINATION */
+
+@media (max-width: 81.25em) {
+    :root {
+        --fs-2: 5rem;
+        --fs-5:1.25rem;
+        --fs-10: 1.25rem;
+    }
+
+    .text-preset-5 {letter-spacing: 0.15em;}
+    .text-preset-10 {letter-spacing: 0.15em;}
+
+    .destination {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+
+    .main__destination {
+        padding: 2.5rem;
+    }
+
+    .main__destination__content {
+        flex-direction: column;
+    }
+
+    .main__destination__wrapper__img, .main__destination__wrapper__txt {
+        align-items: center;
+    }
+
+    .main__destination__content img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .destination__texts {
+        text-align: center;
+        gap: 1.5rem;
+        max-width: 32.125rem;
+    }
+
+    .planet-menu ul{
+        justify-content: center;
+    }
 }
