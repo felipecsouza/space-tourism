@@ -29,6 +29,7 @@ a {
     --fs-7: 0.875rem;
     --fs-8: 1rem;
     --fs-9: 1.125rem;
+    --fs-10: 1.75rem;
 
     /* colors */
     --blue-900: #0b0d17;
@@ -49,6 +50,7 @@ a {
 .text-preset-8 { font-weight: 400; font-size: var(--fs-8); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 0.125rem; }
 .text-preset-8-bold { font-weight: 700; font-size: var(--fs-8); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 0.125rem; }
 .text-preset-9 { font-weight: 400; font-size: var(--fs-9); font-family: var(--font-text); text-transform: none; line-height: 1.8; }
+.text-preset-10 { font-weight: 700; font-size: var(--fs-10); font-family: var(--font-text); text-transform: uppercase; letter-spacing: .295rem; opacity: 25%;}
 
 /* --- Utility Classes: Colors (Paint) --- */
 .text-blue-900 { color: var(--blue-900); }
@@ -379,12 +381,19 @@ main {
     background-image: url('../assets/destination/background-destination-desktop.jpg');
 }
 
+.main__destination {
+    flex-direction: column;
+    padding: 3rem 0;
+    align-items: center;
+}
+
 .main__destination__container {
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 1.5rem;
-    align-items: stretch;
-    padding: 3rem 0;
+    width: 100%;
+    max-width: 69.375rem;
 }
 
 .main__destination__container h2 {
@@ -392,6 +401,25 @@ main {
 }
 
 .main__destination__content {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    margin: auto 0;
+}
+
+.main__destination__wrapper__img, .main__destination__wrapper__txt {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.main__destination__content img {
+    width: 480px;
+}
+
+.planet-menu ul {
     display: flex;
     gap: 2rem;
 }
@@ -403,12 +431,22 @@ main {
     max-width: 27.8125rem;
 }
 
-.planet-menu ul {
-    display: flex;
-    gap: 2rem;
+.separation__line {
+    background-color: var(--white);
+    width: 100%;
+    height: 1px;
+    opacity: 25%;
 }
 
 .planet__info {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5rem
+
+}
+
+.planet__info__distance, .planet__info__time {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    flex: 1;
 }
