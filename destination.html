@@ -10,51 +10,51 @@
     <script defer src="js/script.js"></script>
     <title>Space Tourism</title>
 </head>
-<body class="destination">
+<body class="page-destination">
     <header>
-        <div class="logo">
+        <div class="header__logo">
             <a href="index.html"><img src="assets/shared/logo.svg" alt="Space Tourism Home"></a>
-            <div class="menu-line" aria-hidden="true"></div>
+            <div class="header__line" aria-hidden="true"></div>
         </div>
-        <button class="hamburger-menu" aria-controls="primary-navigation" aria-expanded="false">
+        <button class="header__toggle" aria-controls="primary-navigation" aria-expanded="false">
             <img src="assets/shared/icon-hamburger.svg" alt="Open menu">
-        </button>
-        <nav class="menu-nav-container">
-            <button class="btn-close-menu" aria-label="close menu"><img src="assets/shared/icon-close.svg" alt="Close menu"></button>
-            <ul id="primary-navigation" class="menu-nav text-preset-8">
-                <li><a href="index.html"><span class="text-preset-8-bold">00</span>HOME</a></li>
-                <li><a href="destination.html" class="active"><span class="text-preset-8-bold">01</span>DESTINATION</a></li>
-                <li><a href="crew.html"><span class="text-preset-8-bold">02</span>CREW</a></li>
-                <li><a href="technology.html"><span class="text-preset-8-bold">03</span>TECHNOLOGY</a></li>
+        </button> 
+        <nav class="main-nav">
+            <button class="main-nav__close" aria-label="close menu"><img src="assets/shared/icon-close.svg" alt="Close menu"></button>
+            <ul id="primary-navigation" class="main-nav__list text-preset-8">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link"><span class="text-preset-8-bold">00</span>HOME</a></li>
+                <li class="main-nav__item"><a href="destination.html" class="main-nav__link is-active"><span class="text-preset-8-bold">01</span>DESTINATION</a></li>
+                <li class="main-nav__item"><a href="crew.html" class="main-nav__link"><span class="text-preset-8-bold">02</span>CREW</a></li>
+                <li class="main-nav__item"><a href="technology.html" class="main-nav__link"><span class="text-preset-8-bold">03</span>TECHNOLOGY</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main__destination">
-        <div class="main__destination__container">
-            <h2 class="text-preset-5"><span class="text-preset-10">01</span>pick your destination</h2>
-            <div class="main__destination__content">
-                <div class="main__destination__wrapper__img">
+    <main class="destination">
+        <div class="destination__container">
+            <h2 class="text-preset-5-destination"><span class="text-preset-10">01</span>pick your destination</h2>
+            <div class="destination__content">
+                <div class="destination__img-wrapper">
                     <img src="assets/destination/image-moon.webp" alt="Picture of the moon.">
                 </div>
-                <div class="main__destination__wrapper__txt">
-                    <div class="destination__texts">
+                <div class="destination__txt-wrapper">
+                    <div class="destination__details">
                     <div class="planet-menu">
-                        <ul class="text-preset-8">
-                            <li><button class="active">MOON</button></li>
-                            <li><button>MARS</button></li>
-                            <li><button>EUROPA</button></li>
-                            <li><button>TITAN</button></li>
+                        <ul class="text-preset-8 planet-menu__list">
+                            <li class="planet-menu__item"><button class="planet-menu__btn is-active">MOON</button></li>
+                            <li class="planet-menu__item"><button class="planet-menu__btn">MARS</button></li>
+                            <li class="planet-menu__item"><button class="planet-menu__btn">EUROPA</button></li>
+                            <li class="planet-menu__item"><button class="planet-menu__btn">TITAN</button></li>
                         </ul>
                     </div>
                     <h3 class="text-preset-2">MOON</h3>
                     <p class="text-preset-9 text-blue-300">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
-                    <div class="separation__line"></div>
-                    <div class="planet__info">
-                        <div class="planet__info__distance">
+                    <div class="destination__divider"></div>
+                    <div class="planet-info">
+                        <div class="planet-info__distance">
                             <h4 class="text-preset-7 text-blue-300">AVG. DISTANCE</h4>
                             <p class="text-preset-6">384,400 KM</p>
                         </div>
-                        <div class="planet__info__time">
+                        <div class="planet-info__time">
                             <h4 class="text-preset-7 text-blue-300">EST. TRAVEL TIME</h4>
                             <p class="text-preset-6">3 DAYS</p>
                         </div>
