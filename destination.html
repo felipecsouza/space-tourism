@@ -34,31 +34,31 @@
             <h2 class="text-preset-5-destination"><span class="text-preset-10">01</span>pick your destination</h2>
             <div class="destination__content">
                 <div class="destination__img-wrapper">
-                    <img src="assets/destination/image-moon.webp" alt="Picture of the moon.">
+                    <img id="planet-image" src="assets/destination/image-moon.webp" alt="Picture of the moon.">
                 </div>
                 <div class="destination__txt-wrapper">
                     <div class="destination__details">
                     <div class="planet-menu">
                         <ul class="text-preset-8 planet-menu__list">
-                            <li class="planet-menu__item"><button class="planet-menu__btn is-active">MOON</button></li>
-                            <li class="planet-menu__item"><button class="planet-menu__btn">MARS</button></li>
-                            <li class="planet-menu__item"><button class="planet-menu__btn">EUROPA</button></li>
-                            <li class="planet-menu__item"><button class="planet-menu__btn">TITAN</button></li>
+                            <li class="planet-menu__item"><button class="planet-menu__btn is-active" data-planet="moon">MOON</button></li>
+                            <li class="planet-menu__item"><button class="planet-menu__btn" data-planet="mars">MARS</button></li>
+                            <li class="planet-menu__item"><button class="planet-menu__btn" data-planet="europa">EUROPA</button></li>
+                            <li class="planet-menu__item"><button class="planet-menu__btn" data-planet="titan">TITAN</button></li>
                         </ul>
                     </div>
                     <div class="planet-description">
-                        <h3 class="text-preset-2">MOON</h3>
-                        <p class="text-preset-9 text-blue-300">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                        <h3 class="text-preset-2" id="planet-name">MOON</h3>
+                        <p class="text-preset-9 text-blue-300" id="planet-resume">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
                     </div>    
                     <div class="destination__divider"></div>
                     <div class="planet-info">
                         <div class="planet-info__distance">
                             <h4 class="text-preset-7 text-blue-300">AVG. DISTANCE</h4>
-                            <p class="text-preset-6">384,400 KM</p>
+                            <p class="text-preset-6" id="planet-distance">384,400 KM</p>
                         </div>
                         <div class="planet-info__time">
                             <h4 class="text-preset-7 text-blue-300">EST. TRAVEL TIME</h4>
-                            <p class="text-preset-6">3 DAYS</p>
+                            <p class="text-preset-6" id="planet-time">3 DAYS</p>
                         </div>
                     </div>
                     </div>
