@@ -417,10 +417,6 @@ main {
     max-width: 69.375rem;
 }
 
-.destination__container h2 {
-    /* --fs-8: 1.75rem; */
-}
-
 .destination__container h2 span {
     margin-right: 1.5rem;
 }
@@ -485,7 +481,7 @@ main {
 
 .planet-info {
     display: flex;
-    gap: 1.5rem
+    gap: 1.5rem;
 
 }
 

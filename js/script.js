@@ -33,3 +33,27 @@ function closeMenu() {
 // event listeners
 headerToggle.addEventListener("click", openMenu);
 btnCloseMenu.addEventListener("click", closeMenu);
+
+// destinations menu behavior
+planetBtns.forEach(function(btn) {
+    btn.addEventListener("click", async function(event) {
+        planetBtns.forEach(function(b) {
+            b.classList.remove("is-active");
+        });
+        btn.classList.add("is-active");
+
+        const selectedPlanet = btn.dataset.planet;
+        const destinationsArrays = await getDestinationData();
+        const planetData = destinationsArrays.find(function(dest) {
+            return dest.name.toLowerCase() === selectedPlanet.toLowerCase();
+        });
+        if (planetData) {
+            planetName.textContent = planetData.name;
+            planetImage.src = planetData.images.webp;
+            planetImage.alt = `Picture of $={planetData.name}.`;
+            planetResume.textContent = planetData.description;
+            planetDistance.textContent = planetData.distance;
+            planetTime.textContent = planetData.travel;
+        }
+    });
+});
