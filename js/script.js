@@ -48,12 +48,25 @@ planetBtns.forEach(function(btn) {
             return dest.name.toLowerCase() === selectedPlanet.toLowerCase();
         });
         if (planetData) {
+
+            const elementsToAnimate = [planetImage, planetName, planetResume, planetDistance, planetTime];
+
+            elementsToAnimate.forEach(function(el) {
+                el.classList.remove("fade-in");
+                void el.offsetWidth;
+            });
+
             planetName.textContent = planetData.name;
             planetImage.src = planetData.images.webp;
-            planetImage.alt = `Picture of $={planetData.name}.`;
+            planetImage.alt = `Picture of ${planetData.name}.`;
             planetResume.textContent = planetData.description;
             planetDistance.textContent = planetData.distance;
             planetTime.textContent = planetData.travel;
+
+            elementsToAnimate.forEach(function(el, index) {
+                el.style.animationDelay = `${(index * 0.12)}s`;
+                el.classList.add("fade-in");
+            });
         }
     });
 });

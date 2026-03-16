@@ -472,6 +472,10 @@ main {
     max-width: 27.8125rem;
 }
 
+.planet-description > p {
+    min-height: 8.4375rem;
+}
+
 .destination__divider {
     background-color: var(--white);
     width: 100%;
@@ -490,6 +494,22 @@ main {
     flex-direction: column;
     gap: .75rem;
     flex: 1;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInSlide 0.5s ease-out both;
 }
 
 @media (hover:hover) {
