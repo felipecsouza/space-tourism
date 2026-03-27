@@ -688,9 +688,14 @@ main {
 .crew__wrapper-img {
     display: flex;
     align-items: center;
+    min-width: 539px;
+    justify-content: flex-end;
+    overflow: hidden;
 }
 
 .crew__wrapper-img img {
-    height: 42.25rem;
-    margin-left: 2.6875rem;
+    /* margin-left: 2.6875rem; */
+    max-height: 600px;
+    height: auto;
+    object-fit: contain;
 }
