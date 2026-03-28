@@ -694,8 +694,15 @@ main {
 }
 
 .crew__wrapper-img img {
-    /* margin-left: 2.6875rem; */
-    max-height: 600px;
+    max-height: 42.25rem;
     height: auto;
     object-fit: contain;
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%)
+}
+
+@media (max-height: 62.5rem) {
+    .crew__wrapper-img img {
+        max-height: 37.5rem;
+    }
 }
