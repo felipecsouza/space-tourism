@@ -645,14 +645,14 @@ main {
     flex: 1;
 }
 
-.crew__wrapper-text {
+.crew__text-wrapper {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     max-width: 33.6875rem;
 }
 
-.crew__wrapper-text__info {
+.crew__info {
     display: flex;
     flex-direction: column;
     gap:1.5rem;
@@ -660,7 +660,7 @@ main {
     justify-content: center;
 }
 
-.crew__wrapper-text__rank-name {
+.crew__rank-name {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -679,6 +679,7 @@ main {
     background-color: var(--white);
     border-radius: 50%;
     opacity: 0.1744;
+    transition: 0.2s;
 }
 
 .dot-menu__btn.is-active {
@@ -704,5 +705,101 @@ main {
 @media (max-height: 62.5rem) {
     .crew__wrapper-img img {
         max-height: 37.5rem;
+    }
+}
+
+/* Hover Crew Page */
+@media (hover:hover) {
+    .dot-menu__btn:not(.is-active):hover {
+        opacity: 0.5;
+    }
+}
+
+/* Media Querie Crew Tablet */
+
+@media (max-width: 81.25em) {
+    
+    .crew {
+        padding: 2.5rem;
+    }
+
+    .crew__container {
+        width: 100%;
+    }
+    
+    .crew__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crew__text-wrapper {
+        gap: 1.5rem;
+        max-width: 32rem;
+    }
+
+    .crew__info {
+        padding-top: 2.5rem;
+        text-align: center;
+    }
+
+    .crew__info > p {
+        min-height: 7.3125rem;
+    }
+
+    .crew__dot-menu {
+        justify-content: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .dot-menu__btn {
+        width: .625rem;
+        height: .625rem;
+    }
+
+    .crew__wrapper-img {
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .crew__wrapper-img img {
+        max-height: 35rem ;
+    }
+}
+
+/* Media Query Mobile Crew */
+
+@media (max-width: 46.875em) {
+    .crew {
+        padding: 1.5rem;
+    }
+
+    .crew__container {
+        align-items: center;
+    }
+
+    .crew__content {
+        width: 100%;
+    }
+
+    .crew__text-wrapper {
+        gap: 1.5rem;
+        max-width: 20.4375rem;
+    }
+
+    .crew__rank-name {
+        gap: .5rem;
+    }
+
+    .crew__info p {
+        min-height: 10.25rem;
+    }
+
+    .crew__wrapper-img {
+        min-width: 0;
+    }
+
+    .crew__wrapper-img img {
+        max-height: 21.25rem ;
     }
 }
