@@ -813,3 +813,29 @@ main {
 .page-tech {
     background-image: url('../assets/technology/background-technology-desktop.jpg');
 }
+
+.tech {
+    display: flex;
+    padding: 3rem 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 79.6875rem;
+    gap: 1.5rem;
+}
+
+.tech__wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.tech__info-container {
+    display: flex;
+    max-width: 39.6875rem;
+    gap: 4rem;
+}
