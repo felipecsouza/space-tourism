@@ -803,3 +803,13 @@ main {
         max-height: 21.25rem ;
     }
 }
+
+/*
+============================
+======== TECHNOLOGY ========
+============================
+*/
+
+.page-tech {
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+}
