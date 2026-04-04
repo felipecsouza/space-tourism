@@ -71,7 +71,7 @@ a {
 
 .opacity-17 { opacity: 0.17;}
 .opacity-25 { opacity: 0.25;}
-.opacity-50 { opacity: 0.5;}
+.opacity-50 { opacity: 0.5; --target-opacity: 0.5;}
 
 .text-preset-5-destination { font-weight: 400; font-size: var(--fs-5-dest); font-family: var(--font-sub); text-transform: uppercase; letter-spacing: 0.25rem; }
 
@@ -521,7 +521,7 @@ main {
     }
 
     100% {
-        opacity: 1;
+        opacity: var(--target-opacity, 1);
         transform: translateY(0);
     }
 }
