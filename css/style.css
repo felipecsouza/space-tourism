@@ -854,6 +854,10 @@ main {
     gap: 1.5rem;
 }
 
+.tech__container > h2 > span {
+    margin-right: 1.5rem;
+}
+
 .tech__wrapper {
     display: flex;
     gap: 2rem;
@@ -896,20 +900,30 @@ main {
 
 @media (max-width: 81.25em) {
 
+    .page-tech {
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+    }
+
     .tech {
-        padding: 2.5rem;
+        padding: 2.5rem 0;
         justify-content: center;
     }
 
+    .tech__container > h2 {
+        padding-left: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
     .tech__wrapper {
-        flex-direction: column-reverse;
-        position: relative;
+        flex-direction: column;
+        gap: 3.5rem;
     }
 
     .tech__img-container {
-        position: absolute;
+        order: -1;
         width: 100vw;
         height: 22.3125rem;
+        margin-left: calc(50%-50vw);
     }
 
     .tech__img-container > img {
@@ -919,10 +933,11 @@ main {
     }
 
     .tech__info-container {
-        margin-top: 24.3125rem;
         flex-direction: column;
         align-items: center;
         gap: 2.5rem;
+        padding: 0 2.5rem;
+        max-width: 100%;
     }
 
     .tech__menu > ul{
@@ -933,11 +948,17 @@ main {
         align-items: center;
         text-align: center;
         max-width: 32rem;
+        gap: 1rem;
+    }
+
+    .tech__info h4 {
+        font-size: 1.5rem;
     }
 
     .tech__menu li button {
         width: 3.5rem;
         height: 3.5rem;
+        font-size: 1.5rem;
     }
 
 }
