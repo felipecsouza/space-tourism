@@ -837,7 +837,7 @@ main {
 .tech__menu li button {
     width: 5rem;
     height: 5rem;
-    border: 1px solid var(--white);
+    border: 1px solid var(--white-50);
     border-radius: 50%;
 }
 
@@ -889,4 +889,63 @@ main {
 
 .tech__img {
     width: 100%;
+}
+
+/* Media Query Technology Tablet */
+
+
+@media (max-width: 81.25em) {
+
+    .tech {
+        padding: 2.5rem;
+        justify-content: center;
+    }
+
+    .tech__wrapper {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .tech__img-container {
+        position: absolute;
+        width: 100vw;
+        height: 22.3125rem;
+    }
+
+    .tech__img-container > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tech__info-container {
+        margin-top: 24.3125rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .tech__menu > ul{
+        flex-direction: row;
+    }
+
+    .tech__info {
+        align-items: center;
+        text-align: center;
+        max-width: 32rem;
+    }
+
+    .tech__menu li button {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+}
+
+/* Media Query Technology 1920/4k */
+@media (min-width: 93.75em) {
+
+    .tech {
+        justify-content: center;
+    }
 }
