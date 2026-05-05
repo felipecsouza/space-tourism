@@ -897,11 +897,11 @@ main {
 
 /* Media Query Technology Tablet */
 
-
 @media (max-width: 81.25em) {
 
     .page-tech {
         background-image: url('../assets/technology/background-technology-tablet.jpg');
+        background-position: right center;
     }
 
     .tech {
@@ -916,7 +916,7 @@ main {
 
     .tech__wrapper {
         flex-direction: column;
-        gap: 3.5rem;
+        gap: 2rem;
     }
 
     .tech__img-container {
@@ -969,4 +969,46 @@ main {
     .tech {
         justify-content: center;
     }
+}
+
+/* Media Query Technology Mobile */
+
+@media (max-width: 46.875em) {
+    
+    :root {
+        .tech__menu li button {
+            font-size: 1.125rem;
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+
+    .tech {
+        padding: 1.5rem;
+        padding-bottom: 3rem;
+        gap: 1.5rem;
+    }
+    
+    .tech__container {
+        align-items: center;
+    }
+
+    .tech__container > h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .tech__menu > ul{
+        gap: 1rem;
+    }
+
+    .tech__info h4 {
+        font-size: 1.125rem;
+    }
+
+    .tech__img-container {
+        height: 16.125rem;
+    }
+
+
 }
