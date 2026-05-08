@@ -975,12 +975,10 @@ main {
 
 @media (max-width: 46.875em) {
     
-    :root {
-        .tech__menu li button {
-            font-size: 1.125rem;
-            height: 2.5rem;
-            width: 2.5rem;
-        }
+    .tech__menu li button {
+        font-size: 1.125rem;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 
     .tech {
